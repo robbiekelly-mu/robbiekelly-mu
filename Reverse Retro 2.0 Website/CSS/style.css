@@ -33,7 +33,7 @@ li {
 }
 
 .container {
-	width: 1800px;
+	width: 95vw;
 }
 
 .right-align {
@@ -104,9 +104,9 @@ header nav {
 }
 
 #jerseycollage {
-	width: 1920px;
-	height: 1080px;
-	background-image: url("../images/jerseycollage.jpg");
+	width: 100vw;
+	height: 100vh;
+	background-image: url("../images/jerseycollage.png");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
