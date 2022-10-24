@@ -1,0 +1,30 @@
+tr:nth-child(even) {
+	background-color: #e0e0e0;
+}
+
+table{
+	width: 95%;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+}
+
+table, th, td{
+			border-collapse: collapse;
+			padding: 6px;
+			font-family: "Titillium Web";
+			text-align: left;
+		}
+
+h1, h3{
+	font-family: "Titillium Web";
+}
+
+.caps{
+	text-transform: uppercase;
+}
+
+.bold{
+	font-family: "Titillium Web";
+	font-weight: 600;
+}
+
