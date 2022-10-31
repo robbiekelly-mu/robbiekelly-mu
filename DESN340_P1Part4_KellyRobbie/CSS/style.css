@@ -22,9 +22,17 @@ div>h4{
 	margin-bottom: 20px;
 }
 
-.objecttext{
-	margin-top: 82px ;
+.removeimagemargin{
+	margin-top: -48px;
 }
+
+/*.mt-sm-3{
+	margin-top: 5rem !important;
+}*/
+
+/*.objecttext{
+	margin-top: 82px ;
+}*/
 
 .btn-secondary {
 	--bs-btn-color: #00529c;
@@ -35,6 +43,7 @@ div>h4{
 	--bs-btn-active-border-color: #00529c;
 	--bs-btn-active-bg: #00529c;
 	--bs-btn-hover-border-color: #00529c;
+
 	margin-bottom: 20px;
 	font-family: "Barlow";
 	font-size: 12pt;
@@ -49,6 +58,10 @@ div>h4{
 	--bs-btn-border-color: #00529c;
 	--bs-btn-hover-border-color: #00529c;
 	--bs-btn-active-bg: #00529c;
+	--bs-btn-hover-bg: #00529c;
+	--bs-btn-active-border-color: #00529c;
+	--bs-btn-disabled-color: #00529c;
+	--bs-btn-disabled-border-color: #00529c;
 	font-family: "Barlow";
 	font-size: 12pt;
 }
