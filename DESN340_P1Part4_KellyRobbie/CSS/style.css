@@ -1,0 +1,54 @@
+h1{
+	font-family: "Barlow";
+	font-size: 24pt;
+	font-weight: 800;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+h4{
+	font-family: "Barlow";
+	font-size: 18pt;
+	font-weight: 500;
+}
+
+h6{
+	font-family: "Barlow";
+	font-size: 14pt;
+	font-weight: 400;
+}
+
+div>h4{
+	margin-bottom: 20px;
+}
+
+.objecttext{
+	margin-top: 82px ;
+}
+
+.btn-secondary {
+	--bs-btn-color: #00529c;
+	--bs-btn-bg: #ffffff;
+	--bs-btn-border-color: #00529c;
+	--bs-btn-hover-color: #ffffff;
+	--bs-btn-hover-bg:  #00529c;
+	--bs-btn-active-border-color: #00529c;
+	--bs-btn-active-bg: #00529c;
+	--bs-btn-hover-border-color: #00529c;
+	margin-bottom: 20px;
+	font-family: "Barlow";
+	font-size: 12pt;
+}
+
+.btn-group{
+	margin-bottom: 20px;
+}
+
+.btn-outline-primary{
+	--bs-btn-color: #00529c;
+	--bs-btn-border-color: #00529c;
+	--bs-btn-hover-border-color: #00529c;
+	--bs-btn-active-bg: #00529c;
+	font-family: "Barlow";
+	font-size: 12pt;
+}
