@@ -647,7 +647,6 @@ footer li {
 	border-radius: 16px;
 	padding: 16px;
 	margin: 0 5px 24px 5px;
-
 }
 
 .colourcircbrown {
@@ -664,6 +663,23 @@ footer li {
 	border-radius: 16px;
 	padding: 16px;
 	margin: 0 5px 24px 5px;
+}
+
+#aboutpencil{
+    display: inline-flex;
+    margin-top: 60px;
+    margin-bottom: -20px;
+}
+
+#aboutpencil img{
+    width: 94px;
+    height: auto;
+    display: inline-flex;
+    margin: 0px 61px 0px 61px;
+}
+
+#aboutpencil li {
+	list-style: inside;
 }
 
 #aboutsection1{
@@ -683,11 +699,9 @@ footer li {
 #aboutsection2 p{
 margin: 96px auto 0px auto;
 max-width: 840px;
-
 }
 
 #aboutsection3 p{
 margin: 16px auto 0px auto;
 max-width: 840px;
-
 }
