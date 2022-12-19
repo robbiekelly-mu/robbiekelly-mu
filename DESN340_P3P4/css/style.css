@@ -1,0 +1,598 @@
+/* box model Fix */
+
+html {
+	font-size: 100%;
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+/* clear Fix */
+
+.row:before,
+.row:after {
+	content: " ";
+	display: table;
+}
+
+.row:after {
+	clear: both;
+}
+
+/*Page Styling*/
+html {
+	background-color: #222222;
+}
+
+/*Type*/
+
+@font-face {
+    font-family: "circular_black";
+    src: url("../circular/circular-black-webfont.woff2") format("woff2"),
+         url("../circular/circular-black-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "circular_black_italic";
+    src: url("../circular/circular-black-italic-webfont.woff2") format("woff2"),
+         url("../circular/circular-black-italic-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "circular_bold";
+    src: url("../circular/circular-bold-webfont.woff2") format("woff2"),
+         url("../circular/circular-bold-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "circular_bold_italic";
+    src: url("../circular/circular-bold-italic-webfont.woff2") format("woff2"),
+         url("../circular/circular-bold-italic-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "circular_book";
+    src: url("../circular/circular-book-webfont.woff2") format("woff2"),
+         url("../circular/circular-book-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "circular_book_italic";
+    src: url("../circular/circular-book-italic-webfont.woff2") format("woff2"),
+         url("../circular/circular-book-italic-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "circular_medium";
+    src: url("../circular/circular-medium-webfont.woff2") format("woff2"),
+         url("../circular/circular-medium-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "circular_medium_italic";
+    src: url("../circular/circular-medium-italic-webfont.woff2") format("woff2"),
+         url("../circular/circular-medium-italic-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body, p {
+	font-family: "circular_book";
+	font-size: 	1.1667rem;
+	line-height: 1.25;
+	color: #ffffff;
+}
+
+h1 {
+	font-family:"circular_bold";
+	font-size: 4rem;
+	color: #ffffff;
+}
+
+h2 {
+	font-family:"circular_medium";
+	font-size: 3rem;
+	color: #ffffff;
+}
+
+/*GRID*/
+.container {
+  display: grid; 
+  grid-template-columns: 82px 82px 82px 82px 82px 82px 82px 82px 82px 82px 82px 82px;  
+  gap: 0px 20px; 
+  grid-template-areas: 
+    ". . . . . . . . . . . ."
+    ". . . . . . . . . . . ."; 
+  justify-items: stretch; 
+  width: 1200px; 
+  margin: 0 auto;
+}
+
+.containerepisode {
+  display: grid; 
+  grid-template-columns: 82px 82px 82px 82px 82px 82px 82px 82px; 
+  gap: 0px 20px; 
+  grid-template-areas: 
+    ". . . . . . . ."; 
+  justify-items: stretch; 
+  width: 794px; 
+}
+
+/*Header*/
+
+nav {
+	background-color: #2c2c2c;
+	width: 100%;
+	position: fixed;
+	height: 64px;
+}
+
+nav ul {
+	list-style-type: none;
+	grid-column-start: 13;
+	grid-column-end: 6;
+	text-align: right;
+	margin: auto 0px;
+}
+
+nav li{
+	padding-left: 40px;
+	float: right;
+	margin: auto 0;
+}
+
+nav a{
+	color: #ffffff;
+	text-decoration: none;
+}
+
+nav img {
+	width: 64px;
+}
+
+/*Hero Section*/
+
+#listennow {
+	display: inline-block;
+	background-image: url("../images/heroimage.png");
+	background-size: cover;
+	height: calc(0.5625*100vw);
+	width: 100%;
+	margin: 0px auto 0px auto;
+	text-align: center;
+}
+
+#listennow h1{
+	padding-top: calc(0.5625*100vw/2);
+	margin: 0px;
+}
+
+#listennow h2{
+	margin: 0px;
+}
+
+.buttonspgreen {
+	background-color: #1DB954;
+	border: none;
+	color: #ffffff;
+	padding: 12px 22px;
+	margin-top: 8px;
+	text-decoration: none;
+	display: inline-block;
+	border-radius: 60px;
+}
+
+/*latest episode*/
+
+#latestepisode h1 {
+	grid-column-start: 1;
+	grid-column-end: span 12;
+}
+
+#latestepisode div {
+	grid-column: 8/13;
+	padding: 0 0 0 12px
+}
+
+.buttons3green {
+	background-color: #004030;
+	border: none;
+	color: #ffffff;
+	padding: 12px 22px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	border-radius: 60px;
+}
+
+/*Merchandise Section*/
+
+#merch {
+	background-image: url("../images/165thfloor.png");
+	background-size: cover;
+	height: calc(0.5625*100vw);
+	width: 100%;
+	margin: 48px auto 0px auto;
+	text-align: center;
+}
+
+#merch h1{
+	padding-top: calc(0.5625*100vw/2);
+	margin: 0px;
+}
+
+#merch h2{
+	margin: 0px;
+}
+
+.buttongold {
+	background-color: #E1B658;
+	border: none;
+	color: #ffffff;
+	padding: 12px 22px;
+	text-decoration: none;
+	display: inline-block;
+	border-radius: 60px;
+}
+
+/*Latest Episodes*/
+
+#popular h1 {
+	grid-column-start: 1;
+	grid-column-end: span 12;
+}
+
+#popular iframe {
+	grid-column-start: span 4;
+}
+
+.buttonred {
+	background-color: #B01810;
+	border: none;
+	color: #ffffff;
+	padding: 12px 15px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	border-radius: 60px;
+	margin-top: 24px;
+	grid-column-start: 6;
+	grid-column-end: span 2;
+}
+
+/*About Us*/
+
+#aboutus {
+	text-align: center;
+}
+
+#aboutus img {
+	border-radius: 50%;
+	width: 100%;
+}
+
+#aboutus h1 {
+	grid-column: 1/13;
+	margin-top: 120px;
+}
+
+#aboutus h2 {
+	margin-bottom: 0px;
+}
+
+#aboutus div {
+	grid-column: span 4;
+}
+
+.aboutusicons img{
+	border-radius: 0% !important;
+	width: 24px !important;
+	margin: 12px 6px 0 6px !important;
+}
+
+
+/*About Pod*/
+
+#aboutpod h1 {
+	grid-column: 1/span 12;
+	text-align: center;
+	margin-bottom: 0px;
+}
+
+#aboutpod p{
+	grid-column: 3/11;
+}
+
+.buttonabout {
+	background-color: #004030;
+	border: none;
+	color: #ffffff;
+	padding: 12px 15px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	border-radius: 60px;
+	grid-column-start: 6;
+	grid-column-end: span 2;
+}
+
+
+/*Contact Us*/
+
+#contactus h1 {
+	grid-column: 1/span 12;
+	text-align: center;
+	margin-top: 120px;
+	margin-bottom: 0px;
+
+}
+
+#contactus p{
+	grid-column: 4/10;
+}
+
+/*Contact Us Form*/
+
+#forms form{
+grid-column: 4/10;
+margin-top: 24px;
+}
+
+
+form input[type=text] {
+	border: 4px #2C2C2C;
+	border-radius: 10px;
+	background-color: #1c1c1c;
+	color: #ffffff;
+	padding: 12px 12px;
+	margin: 10px auto 24px auto;
+	width: 100%;
+}
+
+form input[type=text]:focus {
+	outline: none;
+}
+
+form textarea {
+	border: 4px #2C2C2C;
+	border-radius: 10px;
+	background-color: #1c1c1c;
+	color: #ffffff;
+	padding: 12px 12px;
+	margin: 10px auto 24px auto;
+	width: 100%;
+	height: 240px;
+	resize: none;
+}
+
+form textarea:focus {
+	outline: none;
+}
+
+form input[type=submit] {
+	background-color: #004030;
+	border: none;
+	color: #ffffff;
+	padding: 12px 24px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	border-radius: 60px;
+	margin: 0 auto;
+}
+
+/*Episodes*/
+
+#episodeintro h1 {
+	grid-column-start: 1;
+	grid-column-end: span 12;
+	text-align: center;
+	margin: 120px auto 12px auto;
+}
+
+#episodeintro p {
+	grid-column-start: 4;
+	grid-column-end: span 6;
+	margin-bottom: 0px;
+}
+
+/*Season 3 Card*/
+
+#season3 {
+	margin: 48px auto 48px auto;
+	background-color: #001810;
+	width: 75vw;
+	border-radius: 36px;
+	text-align: center;
+}
+
+#season3 h2 {
+	grid-column-start: 1;
+	grid-column-end: span 12;
+	margin: 36px auto 0px auto;
+}
+
+#season3 p {
+	grid-column-start: 4;
+	grid-column-end: span 6;
+	margin-bottom: 36px;
+	text-align: left;
+}
+
+#season3 div>div {
+	grid-column: 3/span 8;
+	margin: 12px 0 48px 0;
+}
+
+#season3 iframe {
+	grid-column-start: span 4;
+}
+
+#season3>a {
+	background-color: #004030;
+	border: none;
+	color: #ffffff;
+	padding: 12px 15px;
+	text-decoration: none;
+	display: inline-block;
+	border-radius: 60px;
+	margin: 36px auto;
+}
+
+/*Season 2 Card*/
+
+#season2 {
+	margin: 48px auto 48px auto;
+	background-color: #411810;
+	width: 75vw;
+	border-radius: 36px;
+	text-align: center;
+}
+
+#season2 h2 {
+	grid-column-start: 1;
+	grid-column-end: span 12;
+	margin: 36px auto 0px auto;
+}
+
+#season2 p {
+	grid-column-start: 4;
+	grid-column-end: span 6;
+	margin-bottom: 36px;
+	text-align: left;
+}
+
+#season2 div>div {
+	grid-column: 3/span 8;
+	margin: 12px 0 48px 0;
+}
+
+#season2 iframe {
+	grid-column-start: span 4;
+}
+
+#season2>a {
+	background-color: #B01810;
+	border: none;
+	color: #ffffff;
+	padding: 12px 15px;
+	text-decoration: none;
+	display: inline-block;
+	border-radius: 60px;
+	margin: 36px auto;
+}
+
+/*Episode 1 Card*/
+
+#season1 {
+	margin: 48px auto 48px auto;
+	background-color: #411810;
+	width: 75vw;
+	border-radius: 36px;
+	text-align: center;
+}
+
+#season1 h2 {
+	grid-column-start: 1;
+	grid-column-end: span 12;
+	margin: 36px auto 0px auto;
+}
+
+#season1 p {
+	grid-column-start: 4;
+	grid-column-end: span 6;
+	margin-bottom: 36px;
+	text-align: left;
+}
+
+#season1 div>div {
+	grid-column: 3/span 8;
+	margin: 12px 0 48px 0;
+}
+
+#season1 iframe {
+	grid-column-start: span 4;
+}
+
+#season1>a {
+	background-color: #B01810;
+	border: none;
+	color: #ffffff;
+	padding: 12px 15px;
+	text-decoration: none;
+	display: inline-block;
+	border-radius: 60px;
+	margin: 36px auto;
+}
+
+/*Archive Season 3*/
+#archive h1{
+	grid-column-start: 1;
+	grid-column-end: span 12;
+	margin-top: 108px;
+}
+
+#archive iframe{
+	grid-column-start: span 4;
+	margin-bottom: 48px;
+}
+
+#archive a {
+	grid-column-start: 1;
+	color: #ffffff;
+	padding: 0px 6px;
+}
+
+/*Footer*/
+
+footer {
+	background-color: #1c1c1c;
+	height: 282px;
+	width: 100%;
+	margin-top: 48px;
+}
+
+footer ul {
+	list-style-type: none;
+	grid-column-start: 0;
+	grid-column-end: span 2;
+	margin-top: 48px;
+}
+
+footer li {
+	padding-bottom: 18px;
+}
+
+footer img {
+	width: 24px;
+	margin: 6px 6px;
+}
+
+footer div {
+	grid-column-start: 11;
+	grid-column-end: span 3;
+}
+
+.footerimagemargin {
+	margin-top: 48px;
+}
+
+footer a {
+	text-decoration: none;
+	color: #ffffff;
+}
